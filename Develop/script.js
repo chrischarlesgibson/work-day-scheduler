@@ -42,7 +42,10 @@ var Btn5 = $("#Btn5PM");
 
 //event listners for all the save buttons along with the corresponding function to save textarea into local storage
 
-Btn9.on("click", function () {});
+Btn9.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("9AM schedule", JSON.stringify(Btn9));
+});
 
 //function to check if current time block is greater than, less than or equal to curent time and then add class of past. future or present with their associated coloring. either grey for past, red for present and green for future
 
