@@ -25,56 +25,77 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p class="description">
+        A simple calendar app for scheduling your work day
+      </p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <div class="row">
-        <div class="col hour">9:00am</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+
+    <main class="container">
+      <div class="row" id="nineAM">
+        <div class="col hour">9AM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">10:00am</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="tenAM">
+        <div class="col hour">10AM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">11:00am</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="elevenAM">
+        <div class="col hour">11AM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">12:00pm</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="twelvePM">
+        <div class="col hour">12PM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">1:00pm</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="onePM">
+        <div class="col hour">1PM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">2:00pm</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="twoPM">
+        <div class="col hour">2PM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">3:00pm</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="threePM">
+        <div class="col hour">3PM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">4:00pm</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="fourAM">
+        <div class="col hour">4PM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="col hour">5:00pm</div>
-        <div class="col-10 border">2 of 3 (wider)</div>
-        <button class="col saveBtn fas fa-save"></button>
+      <div class="row" id="fivePM">
+        <div class="col hour">5PM</div>
+        <textarea class="col-10 border"></textarea>
+        <button class="col saveBtn">
+          <i class="fas fa-save d-flex justify-content-center"></i>
+        </button>
       </div>
-    </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
