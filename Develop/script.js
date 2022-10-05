@@ -1,7 +1,4 @@
-// setting current day header with moment.js
-// $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
-
-// Here we want to use setInterval to constantly update the time with moment js
+// function to display current date at top of page using moment js
 
 function timeRightNow() {
   var time = moment().format("Do-MMM-GGGG");
@@ -10,7 +7,7 @@ function timeRightNow() {
 timeRightNow();
 setInterval(timeRightNow, 1000);
 
-//pulling time bloack ids and putting them into a variable we can use for the check time fuctino
+//pulling time block ids and putting them into a variable
 var nineAM = $("#nineAM");
 var tenAM = $("#tenAM");
 var elevenAM = $("#elevenAM");
@@ -20,6 +17,34 @@ var twoPM = $("#twoPM");
 var threePM = $("#threePM");
 var fourPM = $("#fourPM");
 var fivePM = $("#fivePM");
+
+//selecting text area elements in html using jquery and putting them into variable
+var textArea9A = $("#textArea9AM");
+var textArea10A = $("#textArea10AM");
+var textArea11A = $("#textArea11AM");
+var textArea12P = $("#textArea12PM");
+var textArea1P = $("#textArea1PM");
+var textArea2P = $("#textArea2PM");
+var textArea3P = $("#textArea3PM");
+var textArea4P = $("#textArea4PM");
+var textArea5P = $("#textArea5PM");
+
+//selecting save button elements in html using jquery and putting them into variable
+var Btn9 = $("#Btn9AM");
+var Btn10 = $("#Btn10AM");
+var Btn11 = $("#Btn11AM");
+var Btn12 = $("#Btn12PM");
+var Btn1 = $("#Btn1PM");
+var Btn2 = $("#Btn2PM");
+var Btn3 = $("#Btn3PM");
+var Btn4 = $("#Btn4PM");
+var Btn5 = $("#Btn5PM");
+
+//event listners for all the save buttons along with the corresponding function to save textarea into local storage
+
+Btn9.on("click", function () {});
+
+//function to check if current time block is greater than, less than or equal to curent time and then add class of past. future or present with their associated coloring. either grey for past, red for present and green for future
 
 function timeBlockColors() {
   var now = moment().format("H");
@@ -89,7 +114,3 @@ function timeBlockColors() {
 }
 timeBlockColors();
 setInterval(timeBlockColors, 1000);
-
-// moment js, you should create moment object that represents spefic times for 9, 10, 11 and so on. and then comapre that moment object to another and if one is more then other then add class. research parse, manipulate and query in moment js, may need these to do.// can also make the grid layout with js and jquery. can create a function to make the each nine rows and columns. since your already made the grid with bootstrap, just replace your css file with the starter one. then after your done you can always go back and redo with jquery and js to make rows. shouldnt change anything bout css or html
-
-//function to check if current time block is greater than or less than cuurent time and then add class of green , red or gray depending on what time it is
