@@ -4,23 +4,33 @@
 
 ---
 
-Random Password Generator is an application that takes user input and generates a random password([Link to project found here](https://chrischarlesgibson.github.io/password-generator/)). The user is prompted to input what length they want their password to be. As well as whether they want it to include lowercase, uppercase, numbers and/or special characters. The user must input a length between 8 and 128 and must also pick at least one character type(lowercase, uppercase, numbers and/or special characters).
+Work Day Scheduler is an application that allows the user toeffectively plan and manage their day.([Link to project found here](https://chrischarlesgibson.github.io/work-day-scheduler/)).
 
 ## Usage
 
 ---
 
-Clicking the "generate password" button will prompt the user to start inputting their criteria.Once all criteria is answered by the user, a unique and random password matching the users criteria will appear on the screen.
+The user is presented with a schedule from 9AM-5PM and can enter in what they want to do in each hour and then can save it by clicking the blue save icon on the right. The present hour block is color coded as red, past hours as gray and future hours as green.
 
 ![how to use GIF](./Assets/password%20generator%20GIF.gif)
 
-## Technologies Used
+## Built With
 
 ---
 
 - JavaScript
 - CSS
 - HTML
+- Moment.js
+- Bootstrap
+- JQuery
+- Google fonts
+- Font Awesome
+
+## Technologies Used
+
+---
+
 - Screencastify
 - prettier code formatter
 
@@ -34,13 +44,19 @@ Clicking the "generate password" button will prompt the user to start inputting 
 - [Link to my Linkedin](https://www.linkedin.com/in/chris-gibson-415909250/)
 - [Link to my Portfolio](https://chrischarlesgibson.github.io/Chris-Gibson-project-portfolio/)
 
-## Credits and acknowledgments
+## Credits
 
 ---
 
-- [Thanks to my brother Alex Gibson for advice when I was stuck on some code](https://github.com/argibson02)
+- [JQuery was used extensively in building this app](https://learn.jquery.com/)
 
-- [Raphael Vogel's markdown cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
+- [Moment.js was used to display and track the time](https://momentjs.com/)
+
+- [Google Fonts used for the font](https://fonts.google.com/)
+
+- [Font Awesome used for the save icon](https://fontawesome.com/)
+
+- [Bootstrap grid layout was used](https://getbootstrap.com/docs/4.6/layout/grid/)
 
 - [W3 schools was used extensively for JavaScript reference guides](https://www.w3schools.com/)
 
