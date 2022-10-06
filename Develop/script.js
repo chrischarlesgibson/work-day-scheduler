@@ -47,6 +47,13 @@ Btn9.on("click", function (event) {
   localStorage.setItem("9AM schedule", JSON.stringify(textArea9A.val()));
 });
 
+function renderTextInput() {
+  var lastInput = JSON.parse(localStorage.getItem("9AM schedule"));
+  if (lastInput !== null) {
+    textArea9A.value = lastInput;
+  }
+}
+
 //function to check if current time block is greater than, less than or equal to curent time and then add class of past. future or present with their associated coloring. either grey for past, red for present and green for future
 
 function timeBlockColors() {
