@@ -47,10 +47,99 @@ Btn9.on("click", function (event) {
   localStorage.setItem("9AM schedule", JSON.stringify(textArea9A.val()));
 });
 
-function renderTextInput() {
-  var lastInput = JSON.parse(localStorage.getItem("9AM schedule"));
-  if (lastInput !== null) {
-    $("#textArea9AM").val(lastInput);
+Btn10.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("10AM schedule", JSON.stringify(textArea10A.val()));
+});
+
+Btn11.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("11AM schedule", JSON.stringify(textArea11A.val()));
+});
+
+Btn12.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("12PM schedule", JSON.stringify(textArea12P.val()));
+});
+
+Btn1.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("1PM schedule", JSON.stringify(textArea1P.val()));
+});
+
+Btn2.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("2PM schedule", JSON.stringify(textArea2P.val()));
+});
+
+Btn3.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("3PM schedule", JSON.stringify(textArea3P.val()));
+});
+
+Btn4.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("4PM schedule", JSON.stringify(textArea4P.val()));
+});
+
+Btn5.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("5PM schedule", JSON.stringify(textArea5P.val()));
+});
+
+function renderTextInput9() {
+  var lastInput9 = JSON.parse(localStorage.getItem("9AM schedule"));
+  if (lastInput9 !== null) {
+    $("#textArea9AM").val(lastInput9);
+  }
+}
+
+function renderTextInput10() {
+  var lastInput10 = JSON.parse(localStorage.getItem("10AM schedule"));
+  if (lastInput10 !== null) {
+    $("#textArea10AM").val(lastInput10);
+  }
+}
+function renderTextInput11() {
+  var lastInput11 = JSON.parse(localStorage.getItem("11AM schedule"));
+  if (lastInput11 !== null) {
+    $("#textArea11AM").val(lastInput11);
+  }
+}
+function renderTextInput12() {
+  var lastInput12 = JSON.parse(localStorage.getItem("12PM schedule"));
+  if (lastInput12 !== null) {
+    $("#textArea12PM").val(lastInput12);
+  }
+}
+function renderTextInput1() {
+  var lastInput1 = JSON.parse(localStorage.getItem("1PM schedule"));
+  if (lastInput1 !== null) {
+    $("#textArea1PM").val(lastInput1);
+  }
+}
+function renderTextInput2() {
+  var lastInput2 = JSON.parse(localStorage.getItem("2PM schedule"));
+  if (lastInput2 !== null) {
+    $("#textArea2PM").val(lastInput2);
+  }
+}
+function renderTextInput3() {
+  var lastInput3 = JSON.parse(localStorage.getItem("3PM schedule"));
+  if (lastInput3 !== null) {
+    $("#textArea3PM").val(lastInput3);
+  }
+}
+function renderTextInput4() {
+  var lastInput4 = JSON.parse(localStorage.getItem("4PM schedule"));
+  if (lastInput4 !== null) {
+    $("#textArea4PM").val(lastInput4);
+  }
+}
+function renderTextInput5() {
+  var lastInput5 = JSON.parse(localStorage.getItem("5PM schedule"));
+  if (lastInput5 !== null) {
+    $("#textArea5PM").val(lastInput5);
   }
 }
 
@@ -126,5 +215,13 @@ timeBlockColors();
 setInterval(timeBlockColors, 1000);
 
 $(document).ready(function () {
-  renderTextInput();
+  renderTextInput9();
+  renderTextInput10();
+  renderTextInput11();
+  renderTextInput12();
+  renderTextInput1();
+  renderTextInput2();
+  renderTextInput3();
+  renderTextInput4();
+  renderTextInput5();
 });
