@@ -50,7 +50,7 @@ Btn9.on("click", function (event) {
 function renderTextInput() {
   var lastInput = JSON.parse(localStorage.getItem("9AM schedule"));
   if (lastInput !== null) {
-    textArea9A.value = lastInput;
+    $("#textArea9AM").val(lastInput);
   }
 }
 
@@ -124,3 +124,7 @@ function timeBlockColors() {
 }
 timeBlockColors();
 setInterval(timeBlockColors, 1000);
+
+$(document).ready(function () {
+  renderTextInput();
+});
