@@ -40,7 +40,7 @@ var Btn3 = $("#Btn3PM");
 var Btn4 = $("#Btn4PM");
 var Btn5 = $("#Btn5PM");
 
-//event listners for all the save buttons along with the corresponding function to save textarea into local storage
+//event listners for all the save buttons along with the corresponding function to save value that is entered in text area into local storage
 
 Btn9.on("click", function (event) {
   event.preventDefault();
@@ -86,6 +86,10 @@ Btn5.on("click", function (event) {
   event.preventDefault();
   localStorage.setItem("5PM schedule", JSON.stringify(textArea5P.val()));
 });
+
+
+//function for all 9 text hour blocks so that user last entry upon clicking save will still appear in the text area when the user refreshes the page
+
 
 function renderTextInput9() {
   var lastInput9 = JSON.parse(localStorage.getItem("9AM schedule"));
@@ -214,6 +218,8 @@ function timeBlockColors() {
 timeBlockColors();
 setInterval(timeBlockColors, 1000);
 
+
+//calling on render text area function 
 $(document).ready(function () {
   renderTextInput9();
   renderTextInput10();

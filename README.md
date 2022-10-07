@@ -1,10 +1,10 @@
-# work-day-scheduler
+# Work-Day-Scheduler
 
 ## Description
 
 ---
 
-Work Day Scheduler is an application that allows the user toeffectively plan and manage their day.([Link to project found here](https://chrischarlesgibson.github.io/work-day-scheduler/)).
+Work Day Scheduler is an application that allows the user to effectively plan and manage their day.([Link to project found here](https://chrischarlesgibson.github.io/work-day-scheduler/)).
 
 ## Usage
 
@@ -12,7 +12,7 @@ Work Day Scheduler is an application that allows the user toeffectively plan and
 
 The user is presented with a schedule from 9AM-5PM and can enter in what they want to do in each hour and then can save it by clicking the blue save icon on the right. The present hour block is color coded as red, past hours as gray and future hours as green.
 
-![how to use GIF](./Assets/password%20generator%20GIF.gif)
+![how to use GIF](./Assets/Work%20Day%20Scheduler%20GIF.gif)
 
 ## Built With
 
@@ -32,7 +32,6 @@ The user is presented with a schedule from 9AM-5PM and can enter in what they wa
 ---
 
 - Screencastify
-- prettier code formatter
 
 ## Author Info
 
@@ -48,17 +47,17 @@ The user is presented with a schedule from 9AM-5PM and can enter in what they wa
 
 ---
 
-- [JQuery was used extensively in building this app](https://learn.jquery.com/)
+- [JQuery used extensively in building this app.](https://learn.jquery.com/)
 
-- [Moment.js was used to display and track the time](https://momentjs.com/)
+- [Moment.js used to display and track the time.](https://momentjs.com/)
 
-- [Google Fonts used for the font](https://fonts.google.com/)
+- [Google Fonts used for the font.](https://fonts.google.com/)
 
 - [Font Awesome used for the save icon](https://fontawesome.com/)
 
-- [Bootstrap grid layout was used](https://getbootstrap.com/docs/4.6/layout/grid/)
+- [Bootstrap grid layout used for daily schedule display](https://getbootstrap.com/docs/4.6/layout/grid/)
 
-- [W3 schools was used extensively for JavaScript reference guides](https://www.w3schools.com/)
+- [W3 schools used extensively for JavaScript reference guides](https://www.w3schools.com/)
 
 ## License
 
